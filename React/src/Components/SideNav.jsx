@@ -9,11 +9,15 @@ const SideNav = () => {
       <h2 className="sidenav-title">React.js</h2>
       <FaReact className="react-logo" />
       <ul className="sidenav-list">
-        <NavLink to={"/"}>Home</NavLink>
-        <NavLink to={"/useRef"}>useRef</NavLink>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <NavLink to={"/"} className={"link"}>
+          Home
+        </NavLink>
+        <NavLink to={"/useRef"} className={"link"}>
+          useRef
+        </NavLink>
+        <NavLink to={"/useMemo"} className={"link"}>
+          useMemo
+        </NavLink>
       </ul>
     </div>
   );
