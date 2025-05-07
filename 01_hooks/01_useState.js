@@ -23,7 +23,6 @@ setName("John");
 // ➡️ These are batched into one re-render, not two.
 
 /*---
-
 ❓ What happens if you call setCount(count + 1) four times inside a function?
 ---*/
 const [count, setCount] = useState(0);
@@ -79,7 +78,6 @@ React also batches updates where possible to optimize rendering.”
 
 /*---
 🔧 How to Update an Object in useState
-
 ---*/
 
 const [user, setUser] = useState({
@@ -214,9 +212,7 @@ This is lifting state — because the state that originally could have been in I
 /*---
   🔍 Common Interview Use Cases:
 Synchronizing form inputs across multiple components
-
 Showing/hiding components based on shared state
-
 Passing selected data between a list and a details view
 ---*/
 
