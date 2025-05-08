@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../App";
+import { ThemeContext } from "../context/ThemeContext";
 
 const ChildC = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
-  function handleThemeChange() {
+  function toggleTheme() {
     if (theme === "light") {
       setTheme("dark");
     } else {
@@ -13,7 +13,7 @@ const ChildC = () => {
   }
 
   return (
-    <button onClick={handleThemeChange}>
+    <button onClick={toggleTheme}>
       {theme === "light" ? "dark" : "light"} theme
     </button>
   );
