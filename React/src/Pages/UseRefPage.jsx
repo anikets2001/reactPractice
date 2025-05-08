@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import SideNav from "../Components/SideNav";
+import ThemeToggle from "../Components/ThemeToggle";
 
 export const UseRefPage = () => {
   const inputRef = useRef(null);
@@ -12,6 +13,8 @@ export const UseRefPage = () => {
     <div className="page-container">
       <SideNav />
       <div className="page-wrapper">
+        <ThemeToggle />
+        <br />
         <label for="name">Name:</label>
         <input
           id="name"
