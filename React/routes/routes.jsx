@@ -1,20 +1,33 @@
+import { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import HomePage from '../src/Pages/HomePage'
-import { UseRefPage } from "../src/Pages/UseRefPage";
-import  UseMemoPage  from "../src/Pages/UseMemoPage";
 
+const HomePage = lazy(() => import("../src/Pages/HomePage"));
+const UseRefPage = lazy(() => import("../src/Pages/UseRefPage"));
+const UseMemoPage = lazy(() => import("../src/Pages/UseMemoPage"));
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: (
+      <Suspense fallback={"loading..."}>
+        <HomePage />
+      </Suspense>
+    ),
   },
-  {
+  { 
     path: "/useRef",
-    element: <UseRefPage />,
+    element: (
+      <Suspense fallback={"loading..."}>
+        <UseRefPage />
+      </Suspense>
+    ),
   },
   {
     path: "/useMemo",
-    element: <UseMemoPage />,
+    element: (
+      <Suspense fallback={"loading"}>
+        <UseMemoPage />
+      </Suspense>
+    ),
   },
 ]);

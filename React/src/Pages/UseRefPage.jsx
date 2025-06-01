@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
 import SideNav from "../Components/SideNav";
-import ThemeToggle from "../Components/ThemeToggle";
+import ToggleTheme from "../Components/ToggleTheme";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 export const UseRefPage = () => {
+  const { theme } = useContext(ThemeContext);
   const inputRef = useRef(null);
 
   function handleNameChange() {
@@ -10,10 +13,10 @@ export const UseRefPage = () => {
   }
 
   return (
-    <div className="page-container">
+    <div className={`page-container ${theme === "light" ? "light" : "dark"}`}>
       <SideNav />
       <div className="page-wrapper">
-        <ThemeToggle />
+        <ToggleTheme />
         <br />
         <label for="name">Name:</label>
         <input

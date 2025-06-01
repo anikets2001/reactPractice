@@ -1,12 +1,15 @@
-import React from "react";
+import "../Css/homepage.css";
+import React, { useContext } from "react";
 import SideNav from "../Components/SideNav";
 import { FaReact } from "react-icons/fa";
-import "../Css/homepage.css";
-import ThemeToggle from "../Components/ThemeToggle";
+import ToggleTheme from "../Components/ToggleTheme";
+import { ThemeContext } from "../context/ThemeContext";
 
 const HomePage = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div className="page-container">
+    <div className={` page-container ${theme === "light" ? "light" : "dark"}`}>
       <SideNav />
       <div className="page-content">
         <div className="header-wrapper">
@@ -17,7 +20,7 @@ const HomePage = () => {
               interview preparation.
             </p>
           </div>
-          <ThemeToggle />
+          <ToggleTheme />
         </div>
         <div className="logo-wrapper">
           <FaReact className="react-logo" />

@@ -76,5 +76,67 @@ useContext is for static/shared state. Redux/Zustand are better for complex stat
 But we must be careful — if the value changes, it re-renders all consumers, 
 so it's not great for high-frequency updates like typing state. In such cases, 
 using state management tools like Redux or Zustand is more appropriate.”
+
+
+
+
 ---*/
 
+
+Gurugram
+Front end React.js
+HCL
+Noida 
+40%
+5 days working
+
+new delhi 
+9 to 12 am
+
+
+/*---
+  Bountous x accolite
+
+  monday()
+  js main
+  (closure, promise, execution context)
+  closure what return, scope chaining, example, how to use it in currying
+  setTimeout problems
+  race, any, all, allSettled (usecase, polyfill)
+
+  machine coding:
+  akshay saini machine coding(youtube)
+
+  React.js
+  reconciliation, react-fiber, state management, useState, recent react-19,
+
+  React, client
+
+  Interview kitne de diye:
+  Mouro, two problem, 
+
+  wobot
+
+  linkedin, instahyre, naukri
+  ioT83
+---*/
+
+/*---
+Bounteous Questions
+
+1. What is the difference between useRef and createRef?
+2. What are closures in JavaScript?
+3. Given a string, find the number of occurrences of each character.
+4. Write code to split an array of integers into two subarrays where both arrays have an equal sum.
+5. Given a string, find all possible permutations of the string.
+6. Given an array containing only 0s and 1s, how would you segregate the 0s and 1s with the minimum number of swaps?
+7. Given an array of integers, find the maximum value in each contiguous subarray of size k. 
+8. Majority Element Problem Statement
+9. What is the difference between Functional Components and Class Components in React?
+10. What is Redux?
+11. How does Redux work?
+12. What are props in React?
+13. Sort 0 1 2 Problem Statement
+    Given an integer array arr of size 'N' containing only 0s, 1s, and 2s, write an algorithm to sort the array.
+14. Coding to find the common characters comparing 3 strings
+---*/
