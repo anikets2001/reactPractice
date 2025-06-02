@@ -10,8 +10,6 @@ parent-container-div with id 'modal-root'
 
 ---*/
 
-
-
 // inside index.html create a div with id 'modal-root'
 // <!DOCTYPE html>
 // <html lang="en">
@@ -21,7 +19,7 @@ parent-container-div with id 'modal-root'
 //   </head>
 //   <body>
 //     <div id="root"></div>
-//     <div id="modal-root"></div> <!-- Portal target -->
+//     <div id="modal-root"></div> <!-- target -->
 //   </body>
 // </html>
 
