@@ -1,10 +1,12 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useContext } from "react";
 import SideNav from "../Components/SideNav";
-import ThemeToggle from "../Components/ThemeToggle";
+import ToggleTheme from "../Components/ToggleTheme";
+import { ThemeContext } from "../context/ThemeContext";
 
 const UseMemoPage = () => {
   const [input, setInput] = useState(5);
   const [counter, setCounter] = useState(0);
+  const { theme } = useContext(ThemeContext);
 
   const square = useMemo(() => {
     console.time("Execution Time");
@@ -15,10 +17,11 @@ const UseMemoPage = () => {
   }, [input]);
 
   return (
-    <div className="page-container">
+    <div className={` page-container ${theme === "light" ? "light" : "dark"}`}>
       <SideNav />
+
       <div className="page-wrapper">
-        <ThemeToggle />
+        <ToggleTheme />
         <br />
         <input
           type="number"

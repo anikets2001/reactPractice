@@ -8,8 +8,15 @@
   display: flex;
 }
 
+.dark {
+  background-color: #000;
+}
+
+.light {
+  background-color: #fff;
+}
+
 .page-content {
-  flex: 1;
   padding: 40px;
   display: flex;
 }
@@ -28,8 +35,6 @@ body.dark {
   color: #fff;
 }
 
-
-
 button {
   padding: 8px 16px;
   border: none;
@@ -37,3 +42,26 @@ button {
   cursor: pointer;
   border-radius: 4px;
 }
+
+.light p,
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6,
+.light span {
+  color: black;
+}
+
+.dark p,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark span {
+  color: white;
+}
+
