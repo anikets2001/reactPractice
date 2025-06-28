@@ -12,7 +12,6 @@ It happens when changes affect the **document flow** or **structure**.
 - Window resize or media query changes
 - Accessing layout properties (like `offsetHeight`, `scrollTop`) — they **force sync layout**
 
-
 ---*/
 
 /*---

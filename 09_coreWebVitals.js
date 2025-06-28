@@ -11,6 +11,10 @@ Visual stability
 /*---
 🔍 The 3 Core Web Vitals
 
+1.Largest contentFul paint
+2.First Input delay
+3.Cumulative Layout Shift
+
 1. LCP – Largest Contentful Paint
 📌 What is it?
 Measures loading performance — specifically, the time it takes to render the largest visible content 

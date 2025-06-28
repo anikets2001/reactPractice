@@ -66,13 +66,13 @@ Unmounting	                componentWillUnmount
 Class-Based	                                Functional (Hooks)	                            Purpose
 
 constructor()	                            useState	                                    Initialize state
-render()	                                Return JSX directly	                            Output UI
-componentDidMount()	                        useEffect(() => { ... }, [])	                Run once after mount
+render()	                                Return JSX directly	                          Output UI
+componentDidMount()	                      useEffect(() => { ... }, [])	                Run once after mount
 componentDidUpdate()	                    useEffect(() => { ... }, [dependencies])	    Run on update (if deps change)
-componentWillUnmount()	                    useEffect(() => { return () => {} }, [])	    Cleanup before unmount
-getDerivedStateFromProps()	                useEffect + derived state logic manually	    Sync state with props
-shouldComponentUpdate()	                    React.memo()	                                Performance optimization
-getSnapshotBeforeUpdate()	                useRef + useLayoutEffect (rare)	                Read before DOM paints
+componentWillUnmount()	                  useEffect(() => { return () => {} }, [])	    Cleanup before unmount
+getDerivedStateFromProps()	              useEffect + derived state logic manually	    Sync state with props
+shouldComponentUpdate()	                  React.memo()	                                Performance optimization
+getSnapshotBeforeUpdate()	                useRef + useLayoutEffect (rare)	              Read before DOM paints
 
 ----*/
 
